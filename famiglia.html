@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Questionario</title>
+</head>
+
+<!-- CSS -->
+
+<style type="text/css">
+
+	@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+	.griglia {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-column-gap: 0em;
+			grid-gap: 0px;
+			column-gap: 1em;
+			grid-row-gap: 0em;
+		}
+
+		.cella {
+			border: 0px solid red;
+		}
+
+		.doppia {
+			 grid-column: span 2;
+		}
+
+		.tutta {
+			 grid-column: span 4;
+		}
+
+	img {
+		height: 700px;
+	}
+
+	body {
+		background-color: black;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	pre {
+		font-family: 'Courier Prime', monospace;
+		font-weight: bold;
+		color: white;
+		margin-left: 30px;
+		margin-top: 30px;
+		font-size: 50px;
+		line-height: 30px;
+	}
+
+	.invisibile {
+		display: none;
+	}
+	
+	h1 {
+		font-family: 'Courier Prime', monospace;
+		font-weight: bold;
+		color: white;
+		margin-left: 30px;
+		margin-top: 30px;
+		font-size: 50px;
+		line-height: 90px;
+	}
+	
+	p {
+		font-family: 'Courier Prime', monospace;
+		font-size: 50px;
+		margin-left: 30px;
+		color: white;
+		margin-top: 10px;
+	}
+
+	button {
+		border: 2px;
+		border-color: white;
+  		cursor: pointer;
+  		text-align: left;
+  		padding: -20px;
+  		margin: none;
+	}
+
+	footer 
+	{
+	position: absolute;
+	bottom: 0;
+	}
+
+	.button {
+		border: 2px solid white;
+		border-color: white;
+  		cursor: pointer;
+  		background-color: black;
+  		font-family: 'Courier Prime', monospace;
+		font-size: 50px;
+		height: 50px;
+		margin-left: 30px;
+		width: 800px;
+	}
+
+</style>
+<body>
+
+	<div>
+		<p>
+			<img src="assets/domanda2.png" style="height: 80px; margin-left: 400px;">
+		</p>
+	</div>
+
+	<div class="griglia">
+		<div class="cella" style="width: 260px">
+		</div>
+		<div class="cella">
+			<a href="makeup.html">
+				<img src="assets/famgay.jpeg">
+			</a>
+		</div>
+		<div class="cella">
+			<a href="makeup.html">
+			<img src="assets/fametero.jpeg">
+		</a>
+		</div>
+		<div class="cella" style="width: 260px">
+		</div>
+	</div>
+
+	<br>
+
+	<div class="griglia">
+			<div class="cella" style="width: 260px">
+			</div>
+			<div class="cella">
+				<a href="makeup.html">
+				<button class="button">
+					<p style="font-size: 25px; text-align: center">Entrambi</p>
+				</button>
+			</a>
+			</div>
+
+</body>
+
+</html>
