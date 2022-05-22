@@ -11,6 +11,28 @@
 
 	@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
+	.griglia {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap: 0em;
+		grid-gap: 0px;
+		column-gap: 1em;
+		grid-row-gap: 0em;
+	}
+
+	.cella {
+		border: 0px solid red;
+	}
+
+	.doppia {
+		grid-column: span 2;
+	}
+
+	.tutta {
+		grid-column: span 4;
+	}
+
+
 	body {
 		background-color: black;
 		margin-top: 10px;
@@ -79,6 +101,7 @@
 		height: 80px;
 		position: absolute;
 		left: 1200px;
+		top: 500px;
 		width: 360px;
 		margin-bottom: 0px;
 	}
